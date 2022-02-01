@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
+
+:root {
+  --texto-epilogue: "Epilogue", sans-serif;
+  --texto-manrope: "Manrope", sans-serif;
+  --color-amarillo: #bced09;
+  --color-azul: #3822e4; }
+
+body {
+  background-color: var(--color-amarillo); }
+
+.container {
+  width: 85%;
+  max-width: 1474px;
+  margin: 0 auto; }
+
+header {
+  border-bottom: 1px solid #3822e4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-amarillo);
+  z-index: 5; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 0; }
+  nav a {
+    text-decoration: none;
+    color: var(--color-azul);
+    font-family: var(--texto-manrope);
+    font-size: 22px;
+    font-weight: 500; }
+  nav ul {
+    list-style: none;
+    display: flex; }
+    nav ul li {
+      padding: 0 4px; }
+    nav ul li a.desactivo {
+      opacity: 0.5; }
+  nav a.contacto {
+    font-family: var(--texto-manrope);
+    font-size: 20px;
+    font-weight: 700; }
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex; }
+  main section {
+    min-width: 100%;
+    height: calc(100vh - 120px); }
+
+section.home {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden; }
+  section.home .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  section.home .home-part1 {
+    width: 55%; }
+    section.home .home-part1 .title h1 {
+      font-size: 120px;
+      font-weight: 900;
+      font-family: var(--texto-epilogue);
+      line-height: 85.37px;
+      color: var(--color-azul);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    section.home .home-part1 .title h2 {
+      font-family: var(--texto-manrope);
+      font-weight: 700;
+      font-size: 168.017px;
+      line-height: 135px;
+      color: #bced09;
+      -webkit-text-stroke: 4.81298px;
+      -webkit-text-stroke-color: var(--color-azul);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    section.home .home-part1 p {
+      padding-top: 30px;
+      font-family: var(--texto-manrope);
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: var(--color-azul); }
+    section.home .home-part1 .btn {
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      section.home .home-part1 .btn a {
+        font-family: var(--texto-manrope);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 43px;
+        padding: 5px 51px;
+        color: var(--color-azul);
+        border: 2px solid var(--color-azul);
+        border-radius: 38.8994px;
+        text-decoration: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      section.home .home-part1 .btn .icon {
+        position: relative; }
+        section.home .home-part1 .btn .icon p {
+          padding-top: 0;
+          position: absolute;
+          top: 49%;
+          left: 50%;
+          color: #fff;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  section.home .home-part2 .content-img {
+    position: relative; }
+    section.home .home-part2 .content-img img.videos-corporativos {
+      width: 593px; }
+    section.home .home-part2 .content-img p {
+      font-family: var(--texto-manrope);
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 36px;
+      color: var(--color-amarillo);
+      -webkit-text-fill: var(--color-amarillo) !important;
+      -webkit-text-stroke: 2px;
+      -webkit-text-stroke-color: var(--color-azul);
+      position: absolute;
+      bottom: 17px;
+      left: 6px;
+      text-shadow: 3px 2px 0px #1e1e24; }
+    section.home .home-part2 .content-img img.icon-whatsapp {
+      position: absolute;
+      bottom: 0px;
+      right: -35px; }
+
+section.home2 {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden; }
+  section.home2 .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    section.home2 .content .content-img {
+      position: relative; }
+      section.home2 .content .content-img img.registro-audiovisual {
+        width: 587px; }
+      section.home2 .content .content-img img.animacion2d3d {
+        width: 580px; }
+      section.home2 .content .content-img p {
+        font-family: var(--texto-manrope);
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 36px;
+        color: var(--color-amarillo);
+        -webkit-text-fill: var(--color-amarillo) !important;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: var(--color-azul);
+        position: absolute;
+        bottom: 7px;
+        left: 0px;
+        text-shadow: 3px 2px 0px #1e1e24; }
+
+section.home3 {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden; }
+  section.home3 .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    section.home3 .content .content-img {
+      position: relative; }
+      section.home3 .content .content-img img.campanas-digitales {
+        width: 587px; }
+      section.home3 .content .content-img p {
+        font-family: var(--texto-manrope);
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 36px;
+        color: var(--color-amarillo);
+        -webkit-text-fill: var(--color-amarillo) !important;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: var(--color-azul);
+        position: absolute;
+        bottom: 15px;
+        left: 4px;
+        text-shadow: 3px 2px 0px #1e1e24; }
+    section.home3 .content .home3-part2 .title {
+      width: 520px; }
+      section.home3 .content .home3-part2 .title p {
+        font-family: var(--texto-epilogue);
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 75px;
+        color: var(--color-azul); }
+      section.home3 .content .home3-part2 .title p.text2 {
+        color: var(--color-amarillo);
+        position: relative;
+        padding-bottom: 50px; }
+        section.home3 .content .home3-part2 .title p.text2::after {
+          content: url(../icons/resaltador.svg);
+          position: absolute;
+          top: -12px;
+          left: -60px;
+          z-index: -2; }
+      section.home3 .content .home3-part2 .title a {
+        font-family: var(--texto-manrope);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 43px;
+        padding: 10px 51px;
+        color: var(--color-azul);
+        border: 2px solid var(--color-azul);
+        border-radius: 38.8994px;
+        text-decoration: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
