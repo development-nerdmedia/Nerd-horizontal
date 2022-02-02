@@ -13,6 +13,9 @@
   --colo-fondo: #bced09;
   --color-interruptor-on: #3822e4; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 body {
   transition: 0.3s;
   background-color: var(--colo-fondo); }
@@ -23,6 +26,27 @@ body.dark-theme {
   --color-azul: #bced09;
   --colo-fondo: #1e1e24;
   --color-interruptor-on: #bced09; }
+
+.scroll-handle {
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+  height: 20px;
+  background: #ff0000;
+  z-index: 10000;
+  cursor: -webkit-grab;
+  cursor: -moz-grab; }
+
+.noCursor .cursor {
+  display: none; }
+
+.grabbed {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing; }
+
+.grabbed * {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing; }
 
 .container {
   width: 85%;
@@ -285,3 +309,14 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   transform: translateX(2.5em); }
+
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 15px; }
+  .progress-bar .progress {
+    width: 0%;
+    height: 100%;
+    background-color: var(--color-interruptor-on);
+    transition: 0.2s linear; }
