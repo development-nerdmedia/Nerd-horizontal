@@ -687,6 +687,7 @@ section.contactpage {
   top: 0;
   position: fixed;
   transition: transform 0.5s ease;
+  transform: translatex(-100%);
   padding: 75px 0; }
   section.contactpage .container {
     width: 90%;
