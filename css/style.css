@@ -614,6 +614,11 @@ nav.change {
   position: fixed;
   top: 0; }
 
+.contactpage.open {
+  transform: translateX(0%);
+  position: fixed;
+  top: 0; }
+
 section.servicespage {
   background-color: var(--color-azul);
   height: 100vh;
@@ -689,6 +694,9 @@ section.contactpage {
   transition: transform 0.5s ease;
   transform: translatex(-100%);
   padding: 75px 0; }
+  section.contactpage .contendor {
+    position: relative;
+    height: 100%; }
   section.contactpage .container {
     width: 90%;
     max-width: 1700px; }
@@ -717,7 +725,7 @@ section.contactpage {
     section.contactpage .contenido form {
       display: flex;
       flex-direction: column;
-      align-items: flex-end; }
+      align-items: center; }
     section.contactpage .contenido input[type="number"]::-webkit-inner-spin-button,
     section.contactpage .contenido input[type="number"]::-webkit-outer-spin-button {
       -webkit-appearance: none;
@@ -754,8 +762,7 @@ section.contactpage {
       align-items: center;
       color: var(--color-amarillo);
       padding-bottom: 7px;
-      position: relative;
-      bottom: 3px; }
+      position: relative; }
     section.contactpage .contenido #fs-frm ::placeholder {
       opacity: 1; }
     section.contactpage .contenido .form {
@@ -766,6 +773,7 @@ section.contactpage {
     section.contactpage .contenido form {
       width: 1000px; }
     section.contactpage .contenido #fs-frm [type="text"],
+    section.contactpage .contenido #fs-frm [type="number"],
     section.contactpage .contenido #fs-frm textarea {
       background-color: transparent;
       color: var(--color-amarillo);
@@ -773,22 +781,190 @@ section.contactpage {
       border: 2px solid var(--color-amarillo);
       font-family: var(--texto-manrope);
       font-weight: 700;
-      font-size: 28px;
+      font-size: 20px;
       line-height: 56px;
       border-radius: 38.9px;
       padding: 0 30px;
       height: 57px; }
     section.contactpage .contenido #fs-frm textarea {
       height: 112px;
-      margin-bottom: 50px; }
+      margin-bottom: 1.5rem; }
     section.contactpage .contenido #fs-frm [type="submit"] {
-      background-color: var(--color-azul);
+      background-color: var(--color-amarillo);
       width: 186px;
       height: 57px;
       font-family: var(--texto-manrope);
       font-weight: 700;
       font-size: 20px;
       line-height: 38px;
-      color: var(--color-amarillo) !important;
+      color: var(--color-azul) !important;
       cursor: pointer;
-      border-radius: 18.27px; }
+      border-radius: 38.9px;
+      border: 2px solid var(--color-amarillo); }
+  section.contactpage .slider-contacto {
+    position: relative;
+    bottom: -20px; }
+    section.contactpage .slider-contacto .contacto-carousel .box p {
+      font-family: var(--texto-manrope);
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--color-amarillo);
+      text-align: center; }
+
+section.team {
+  height: 100vh;
+  align-items: center;
+  overflow-y: hidden;
+  position: relative; }
+  section.team .content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between; }
+    section.team .content .part1 {
+      width: 50%; }
+      section.team .content .part1 h1 {
+        font-family: var(--texto-epilogue);
+        font-weight: 900;
+        font-size: 96.2571px;
+        color: var(--color-azul); }
+      section.team .content .part1 h2 {
+        font-family: var(--texto-epilogue);
+        font-weight: 900;
+        font-size: 96.2571px;
+        color: var(--color-amarillo);
+        letter-spacing: 0.045em;
+        text-shadow: -3.04px -3.04px 0 var(--color-azul), 0 -3.04px 0 var(--color-azul), 3.04px -3.04px 0 var(--color-azul), 3.04px 0 0 var(--color-azul), 3.04px 3.04px 0 var(--color-azul), 0 3.04px 0 var(--color-azul), -3.04px 3.04px 0 var(--color-azul), -3.04px 0 0 var(--color-azul); }
+      section.team .content .part1 p {
+        font-family: var(--texto-manrope);
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--color-azul);
+        padding-top: 30px;
+        padding-bottom: 50px;
+        line-height: 36px;
+        width: 717px; }
+      section.team .content .part1 button {
+        background-color: var(--color-azul);
+        border-radius: 38.9px;
+        color: var(--color-amarillo);
+        font-family: var(--texto-manrope);
+        font-size: 20px;
+        font-weight: 700;
+        padding: 20px 0;
+        outline: none; }
+    section.team .content .part2 img {
+      filter: drop-shadow(26px 15px 14px #3822e4); }
+  section.team .start {
+    position: absolute;
+    bottom: 57px;
+    left: 746px; }
+
+section.servicios-list {
+  position: relative;
+  min-width: calc(100% - 100px);
+  height: 100vh; }
+  section.servicios-list .list {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px; }
+    section.servicios-list .list a {
+      text-decoration: none; }
+    section.servicios-list .list .item {
+      border: 4px solid var(--color-azul);
+      padding: 41px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      cursor: url(../img/img-hover.png) 38 38, pointer; }
+      section.servicios-list .list .item h2 {
+        font-family: var(--texto-epilogue);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 75px;
+        color: var(--color-azul); }
+      section.servicios-list .list .item h3 {
+        font-family: var(--texto-epilogue);
+        font-weight: 700;
+        font-size: 75px;
+        color: var(--color-amarillo);
+        text-shadow: -2px -2px 0 var(--color-azul), 0 -2px 0 var(--color-azul), 2px -2px 0 var(--color-azul), 2px 0 0 var(--color-azul), 2px 2px 0 var(--color-azul), 0 2px 0 var(--color-azul), -2px 2px 0 var(--color-azul), 2px 0 0 var(--color-azul); }
+  section.servicios-list .footer {
+    width: 100px;
+    height: 100vh;
+    background-color: var(--color-azul);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 50px 0;
+    color: var(--color-amarillo);
+    font-family: var(--texto-manrope);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    section.servicios-list .footer .info p {
+      font-size: 18px;
+      font-weight: 700;
+      writing-mode: vertical-lr; }
+    section.servicios-list .footer .redes {
+      display: flex;
+      flex-direction: column; }
+      section.servicios-list .footer .redes a {
+        text-decoration: none;
+        color: var(--color-amarillo);
+        font-size: 18px;
+        font-weight: 400;
+        writing-mode: vertical-lr;
+        border: 2px solid var(--color-amarillo);
+        padding: 29px 0;
+        border-radius: 20px; }
+      section.servicios-list .footer .redes a:nth-child(1) {
+        margin-bottom: 24px; }
+    section.servicios-list .footer .credito {
+      font-size: 16px;
+      font-weight: 800;
+      writing-mode: vertical-lr; }
+
+section.thankspage {
+  background-color: var(--color-azul);
+  padding: 75px 0; }
+  section.thankspage .contendor {
+    position: relative;
+    height: 100%; }
+  section.thankspage .container {
+    width: 90%;
+    max-width: 1700px;
+    height: auto; }
+  section.thankspage .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    section.thankspage .top img.video-studio-n {
+      position: relative;
+      top: -34px; }
+  section.thankspage .slider-thanks .box p {
+    font-family: var(--texto-epilogue);
+    font-weight: 900;
+    font-size: 81px;
+    color: var(--color-azul);
+    text-shadow: -2px -2px 0 var(--color-amarillo), 0 -2px 0 var(--color-amarillo), 2px -2px 0 var(--color-amarillo), 2px 0 0 var(--color-amarillo), 2px 2px 0 var(--color-amarillo), 0 2px 0 var(--color-amarillo), -2px 2px 0 var(--color-amarillo), 2px 0 0 var(--color-amarillo);
+    letter-spacing: 0.075em; }
+  section.thankspage .slider-thanks.pad {
+    margin-top: 24px;
+    margin-bottom: 50px; }
+  section.thankspage .content-btn {
+    display: flex;
+    justify-content: center; }
+  section.thankspage button {
+    font-family: var(--texto-manrope);
+    font-weight: 700;
+    font-size: 20px;
+    width: 186px;
+    height: 57px;
+    border-radius: 38.9px;
+    background-color: var(--color-amarillo);
+    color: var(--color-azul); }

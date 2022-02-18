@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
     <title>NERD VIDEO STUDIO</title>
   </head>
   <body>
@@ -22,9 +26,9 @@
         </div>
         <div class="btn-nav">
           <ul>
-            <li><a href="#" class="contacto">CONTÁCTANOS</a></li>
+            <li><a href="#contacto" class="contacto">CONTÁCTANOS</a></li>
             <li><a href="#servicios" class="serviciosmenu">SERVICIOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="pages/equipo.html">NOSOTROS</a></li>
           </ul>
         </div>
         <div class="logo">
@@ -81,7 +85,7 @@
         <div class="content">
           <div class="top">
             <img class="video-studio-n" src="img/video-studio.png" alt="" />
-            <a href="">
+            <a href="#home" class="close-contacto">
               <img src="img/equis.svg" alt="" />
             </a>
           </div>
@@ -105,7 +109,7 @@
                   required=""
                 />
                 <input
-                  type="text"
+                  type="number"
                   name="telephone"
                   id="full-name"
                   placeholder="Teléfono (te contactaresmos por Whatsapp)"
@@ -121,6 +125,22 @@
                 <input class="btn button" type="submit" value="Enviar" />
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-contacto">
+        <div class="owl-carousel owl-theme contacto-carousel">
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
           </div>
         </div>
       </div>
@@ -260,14 +280,12 @@
     <script type="text/javascript">
       var s = skrollr.init();
     </script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
