@@ -1,15 +1,17 @@
 document.addEventListener("click", function (e) {
-    if (e.target.closest(".check")) {
-        document.querySelector('body').classList.toggle("dark-theme");
+
+    //ABRI
+    if (e.target.closest(".serviciosmenu")) {
+        document.querySelector(".servicespage").classList.toggle("open");
+        document.querySelector("nav").classList.toggle("change");
+        // jQuery('body').addClass('scrollhidden');
     }
-})
 
-window.addEventListener('load', () => {
-    const progress = document.getElementById('progress');
-    requestAnimationFrame(update);
-})
+    //Cerrar
+    if (e.target.closest(".close") || e.target.closest(".cerrar")) {
+        document.querySelector(".servicespage").classList.toggle("open");
+        document.querySelector("nav").classList.toggle("change");
+        // jQuery('body').removeClass('scrollhidden');
+    }
 
-function update() {
-    progress.style.width = `${((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100)}%`;
-    requestAnimationFrame(update);
-}
+})
