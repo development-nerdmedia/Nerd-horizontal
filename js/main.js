@@ -10,6 +10,9 @@ document.addEventListener("click", function (e) {
         document.querySelector(".contactpage").classList.toggle("open");
         // jQuery('body').addClass('scrollhidden');
     }
+    if (e.target.closest(".check")) {
+        document.querySelector('body').classList.toggle("dark-theme");
+    }
 
     //Cerrar
     if (e.target.closest(".close") || e.target.closest(".cerrar")) {
