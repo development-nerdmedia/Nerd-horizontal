@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
     <title>NERD - Videos Corporativos</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="change1">
         <div class="item1">
           <label class="switch">
             <input type="checkbox" class="check" />
@@ -22,16 +26,124 @@
         </div>
         <div class="btn-nav">
           <ul>
-            <li><a href="#" class="contacto">CONTÁCTANOS</a></li>
-            <li><a href="#">SERVICIOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="#contacto" class="contacto">CONTÁCTANOS</a></li>
+            <li><a href="#servicios" class="serviciosmenu">SERVICIOS</a></li>
+            <li><a href="equipo.html">NOSOTROS</a></li>
           </ul>
         </div>
         <div class="logo">
-          <a href="../index.html"> <img src="../img/logo.png" alt="nerd" /></a>
+          <a href="../index.html"
+            ><img src="../img/logo.png" alt="nerd" /><img
+              src="../img/logo-azul.png"
+              alt="nerd"
+          /></a>
         </div>
       </nav>
     </header>
+    <section class="servicespage">
+      <div class="container">
+        <div class="content">
+          <div class="top">
+            <a href="#home" class="close">
+              <img src="../img/equis.svg" alt="close" />
+            </a>
+          </div>
+          <div class="services">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+            <ul>
+              <li class="cerrar">
+                <a href="videos-corporativos.html"
+                  ><span>VIDEOS </span><span>CORPORATIVOS</span></a
+                >
+              </li>
+              <li class="cerrar">
+                <a href="videos-corporativos.html"
+                  ><span>REGISTRO </span><span>AUDIOVISUAL</span></a
+                >
+              </li>
+              <li class="cerrar">
+                <a href="videos-corporativos.html"
+                  ><span>ANIMACIÓN </span><span>2D/3D</span></a
+                >
+              </li>
+              <li class="cerrar">
+                <a href="videos-corporativos.html"
+                  ><span>CAMPAÑAS </span><span>DIGITALES</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contactpage">
+      <div class="container">
+        <div class="content">
+          <div class="top">
+            <img class="video-studio-n" src="../img/video-studio.png" alt="" />
+            <a href="#home" class="close-contacto">
+              <img src="../img/equis.svg" alt="" />
+            </a>
+          </div>
+          <div class="contenido">
+            <h3>CONTÁCTANOS</h3>
+            <p>Completa el formulario y nos contactaremos en breve</p>
+            <div class="form">
+              <form
+                class="formulario containerform"
+                id="fs-frm"
+                name="complaint-form"
+                accept-charset="utf-8"
+                action="../thanks.html"
+                method=""
+              >
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="Nombre y Apellido "
+                  required=""
+                />
+                <input
+                  type="number"
+                  name="telephone"
+                  id="full-name"
+                  placeholder="Teléfono (te contactaresmos por Whatsapp)"
+                  required=""
+                />
+                <textarea
+                  rows="6"
+                  name="message"
+                  id="complaint"
+                  placeholder="Hablanos de tu proyecto"
+                  required=""
+                ></textarea>
+                <input class="btn button" type="submit" value="Enviar" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-contacto">
+        <div class="owl-carousel owl-theme contacto-carousel">
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <main
       data-0="transform:translateX(0%);"
       data-4000="transform:translateX(-100%);"
@@ -135,14 +247,12 @@
     <script type="text/javascript">
       var s = skrollr.init();
     </script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

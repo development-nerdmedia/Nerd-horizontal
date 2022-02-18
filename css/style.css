@@ -7,6 +7,9 @@
   box-sizing: border-box;
   outline: none; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 :root {
   --texto-epilogue: "Epilogue", sans-serif;
   --texto-manrope: "Manrope", sans-serif;
@@ -358,7 +361,8 @@ section.home {
 section.videos-corporativos {
   height: 100vh;
   align-items: center;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  background-color: var(--color-azul); }
   section.videos-corporativos .content {
     display: flex;
     align-items: center;
@@ -373,7 +377,7 @@ section.videos-corporativos {
       font-family: var(--texto-epilogue);
       font-size: 96px;
       font-weight: 900;
-      color: #3822e4;
+      color: var(--color-amarillo);
       text-shadow: 0px 3.20857px 3.20857px rgba(0, 0, 0, 0.25); }
     section.videos-corporativos .part2 h2 {
       font-family: var(--texto-epilogue);
@@ -381,21 +385,20 @@ section.videos-corporativos {
       font-weight: 900;
       text-shadow: 0px 2.52268px 2.52268px rgba(0, 0, 0, 0.25);
       letter-spacing: 0.045em;
-      color: var(--color-amarillo);
-      -webkit-text-stroke: 3.04px;
-      -webkit-text-stroke-color: var(--color-azul); }
+      color: var(--color-azul);
+      text-shadow: -3.04px -3.04px 0 var(--color-amarillo), 0 -3.04px 0 var(--color-amarillo), 3.04px -3.04px 0 var(--color-amarillo), 3.04px 0 0 var(--color-amarillo), 3.04px 3.04px 0 var(--color-amarillo), 0 3.04px 0 var(--color-amarillo), -3.04px 3.04px 0 var(--color-amarillo), -3.04px 0 0 var(--color-amarillo); }
     section.videos-corporativos .part2 p {
       font-family: var(--texto-manrope);
       font-weight: 500;
       font-size: 22px;
-      color: var(--color-azul);
+      color: var(--color-amarillo);
       padding-top: 30px;
       padding-bottom: 50px;
       line-height: 32px; }
     section.videos-corporativos .part2 button {
-      background-color: var(--color-azul);
+      background-color: var(--color-amarillo);
       border-radius: 38.9px;
-      color: var(--color-amarillo);
+      color: var(--color-azul);
       font-family: var(--texto-manrope);
       font-size: 20px;
       font-weight: 700;
@@ -406,10 +409,11 @@ section.videos-corporativos {
   height: 100vh;
   align-items: center;
   overflow-y: hidden;
-  position: relative; }
+  position: relative;
+  background-color: var(--color-azul); }
   .lista-contacto .container {
     width: 100%;
-    max-width: 1709px;
+    max-width: 1720px;
     margin: 0 auto;
     height: 100%; }
   .lista-contacto .content {
@@ -418,7 +422,7 @@ section.videos-corporativos {
     height: 100%;
     justify-content: space-between; }
     .lista-contacto .content .part1 {
-      background-color: #3822e4;
+      background-color: var(--color-amarillo);
       height: 100vh;
       width: 50%;
       display: flex;
@@ -437,12 +441,11 @@ section.videos-corporativos {
         .lista-contacto .content .part1 ul li:nth-child(8) {
           margin: 0; }
         .lista-contacto .content .part1 ul li:nth-child(odd) {
-          color: var(--color-amarillo); }
+          color: var(--color-azul); }
         .lista-contacto .content .part1 ul li:nth-child(even) {
           letter-spacing: 0.045em;
-          color: var(--color-azul);
-          -webkit-text-stroke: 3.04px;
-          -webkit-text-stroke-color: var(--color-amarillo); }
+          color: var(--color-amarillo);
+          text-shadow: -2px -2px 0 var(--color-azul), 0 -2px 0 var(--color-azul), 2px -2px 0 var(--color-azul), 2px 0 0 var(--color-azul), 2px 2px 0 var(--color-azul), 0 2px 0 var(--color-azul), -2px 2px 0 var(--color-azul), 2px 0 0 var(--color-azul); }
     .lista-contacto .content .part2 {
       width: 50%;
       display: flex;
@@ -461,22 +464,20 @@ section.videos-corporativos {
         font-family: var(--texto-epilogue);
         font-weight: 900;
         font-size: 60px;
-        color: var(--color-azul);
-        -webkit-text-stroke: 2px;
-        -webkit-text-stroke-color: var(--color-azul); }
+        color: var(--color-amarillo); }
       .lista-contacto .content .part2 h4 {
         font-family: var(--texto-epilogue);
         font-weight: 900;
         font-size: 60px;
-        -webkit-text-stroke: 2px;
-        -webkit-text-stroke-color: var(--color-azul);
-        color: var(--color-amarillo); }
+        color: var(--color-azul);
+        letter-spacing: 0.045em;
+        text-shadow: -2px -2px 0 var(--color-amarillo), 0 -2px 0 var(--color-amarillo), 2px -2px 0 var(--color-amarillo), 2px 0 0 var(--color-amarillo), 2px 2px 0 var(--color-amarillo), 0 2px 0 var(--color-amarillo), -2px 2px 0 var(--color-amarillo), 2px 0 0 var(--color-amarillo); }
       .lista-contacto .content .part2 p {
         font-family: var(--texto-manrope);
         font-weight: 500;
         font-size: 18px;
         line-height: 36px;
-        color: var(--color-azul);
+        color: var(--color-amarillo);
         padding-top: 20px; }
       .lista-contacto .content .part2 form {
         display: flex;
@@ -500,7 +501,7 @@ section.videos-corporativos {
       .lista-contacto .content .part2 #fs-frm #card-element:disabled {
         font-family: inherit;
         font-size: 100%;
-        color: var(--color-azul);
+        color: var(--color-amarillo);
         border: none;
         border-radius: 0;
         /* display: block; */
@@ -516,7 +517,7 @@ section.videos-corporativos {
         padding-top: 0.2rem;
         display: flex;
         align-items: center;
-        color: var(--color-azul);
+        color: var(--color-amarillo);
         padding-bottom: 7px;
         position: relative;
         bottom: 3px; }
@@ -532,9 +533,9 @@ section.videos-corporativos {
       .lista-contacto .content .part2 #fs-frm [type="text"],
       .lista-contacto .content .part2 #fs-frm textarea {
         background-color: transparent;
-        color: var(--color-azul);
+        color: var(--color-amarillo);
         margin-bottom: 1.5rem;
-        border: 2px solid var(--color-azul);
+        border: 2px solid var(--color-amarillo);
         font-family: var(--texto-manrope);
         font-weight: 700;
         font-size: 28px;
@@ -546,25 +547,25 @@ section.videos-corporativos {
         height: 112px;
         margin-bottom: 50px; }
       .lista-contacto .content .part2 #fs-frm [type="submit"] {
-        background-color: var(--color-azul);
+        background-color: var(--color-amarillo);
         width: 186px;
         height: 57px;
         font-family: var(--texto-manrope);
         font-weight: 700;
         font-size: 20px;
         line-height: 38px;
-        color: var(--color-amarillo) !important;
+        color: var(--color-azul) !important;
         cursor: pointer;
         border-radius: 18.27px; }
   .lista-contacto .footer {
     width: 100px;
     height: 100vh;
-    background-color: var(--color-azul);
+    background-color: var(--color-amarillo);
     position: absolute;
     right: 0;
     top: 0;
     padding: 50px 0;
-    color: var(--color-amarillo);
+    color: var(--color-azul);
     font-family: var(--texto-manrope);
     display: flex;
     flex-direction: column;
@@ -579,11 +580,11 @@ section.videos-corporativos {
       flex-direction: column; }
       .lista-contacto .footer .redes a {
         text-decoration: none;
-        color: var(--color-amarillo);
+        color: var(--color-azul);
         font-size: 18px;
         font-weight: 400;
         writing-mode: vertical-lr;
-        border: 2px solid var(--color-amarillo);
+        border: 2px solid var(--color-azul);
         padding: 29px 0;
         border-radius: 20px; }
       .lista-contacto .footer .redes a:nth-child(1) {
@@ -606,6 +607,29 @@ nav.change {
   nav.change .logo a img:nth-child(1) {
     display: none; }
   nav.change .logo a img:nth-child(2) {
+    display: block; }
+
+nav.change1.change,
+nav.change1 {
+  background-color: var(--color-amarillo);
+  border-right: 1px solid var(--color-azul); }
+  nav.change1.change a,
+  nav.change1 a {
+    color: var(--color-azul); }
+  nav.change1.change .slider,
+  nav.change1 .slider {
+    background-color: var(--color-azul); }
+  nav.change1.change .slider:before,
+  nav.change1 .slider:before {
+    background-color: var(--color-amarillo); }
+  nav.change1.change .btn-nav ul li a,
+  nav.change1 .btn-nav ul li a {
+    color: var(--color-azul); }
+  nav.change1.change .logo a img:nth-child(1),
+  nav.change1 .logo a img:nth-child(1) {
+    display: none; }
+  nav.change1.change .logo a img:nth-child(2),
+  nav.change1 .logo a img:nth-child(2) {
     display: block; }
 
 .servicespage.open {
@@ -670,16 +694,14 @@ section.servicespage {
             color: var(--color-amarillo); }
           section.servicespage .content .services ul li span:nth-child(2) {
             color: var(--color-azul);
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: var(--color-amarillo); }
+            text-shadow: -2px -2px 0 var(--color-amarillo), 0 -2px 0 var(--color-amarillo), 2px -2px 0 var(--color-amarillo), 2px 0 0 var(--color-amarillo), 2px 2px 0 var(--color-amarillo), 0 2px 0 var(--color-amarillo), -2px 2px 0 var(--color-amarillo), 2px 0 0 var(--color-amarillo); }
           section.servicespage .content .services ul li:hover {
             background-color: #bced09; }
             section.servicespage .content .services ul li:hover span:nth-child(1) {
               color: var(--color-azul); }
             section.servicespage .content .services ul li:hover span:nth-child(2) {
               color: var(--color-amarillo);
-              -webkit-text-stroke-width: 2px;
-              -webkit-text-stroke-color: var(--color-azul); }
+              text-shadow: -2px -2px 0 var(--color-azul), 0 -2px 0 var(--color-azul), 2px -2px 0 var(--color-azul), 2px 0 0 var(--color-azul), 2px 2px 0 var(--color-azul), 0 2px 0 var(--color-azul), -2px 2px 0 var(--color-azul), 2px 0 0 var(--color-azul); }
         section.servicespage .content .services ul li:nth-child(4) {
           margin: 0; }
 
@@ -934,7 +956,12 @@ section.thankspage {
   padding: 75px 0; }
   section.thankspage .contendor {
     position: relative;
-    height: 100%; }
+    height: 114px; }
+  section.thankspage .contenido-thanks {
+    height: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   section.thankspage .container {
     width: 90%;
     max-width: 1700px;
@@ -959,7 +986,8 @@ section.thankspage {
   section.thankspage .content-btn {
     display: flex;
     justify-content: center; }
-  section.thankspage button {
+  section.thankspage a.btn-thanks {
+    text-decoration: none;
     font-family: var(--texto-manrope);
     font-weight: 700;
     font-size: 20px;
@@ -967,4 +995,5 @@ section.thankspage {
     height: 57px;
     border-radius: 38.9px;
     background-color: var(--color-amarillo);
-    color: var(--color-azul); }
+    color: var(--color-azul);
+    padding: 14px 0; }
