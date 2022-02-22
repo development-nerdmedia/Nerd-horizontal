@@ -39,6 +39,22 @@ document.addEventListener("click", function (e) {
 
 })
 
+gsap.registerPlugin(ScrollTrigger);
+const starblue = document.querySelectorAll(".starblue");
+
+const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.body',
+        // markers: true,
+        start: 'top top',
+        end: '100% 100%',
+        scrub: 1,
+        // pin: '.starblue',
+    },
+});
+
+tl.to(starblue, { rotation: 360, duration: 10 })
+
 $('.contacto-carousel').owlCarousel({
     autoplay: true,
     margin: 10,
