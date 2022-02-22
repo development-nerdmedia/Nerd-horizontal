@@ -140,7 +140,7 @@ body.dark-theme section.servicios-list .list .item {
   position: fixed;
   top: 70%;
   left: 40%;
-  z-index: 99; }
+  z-index: 9; }
   .star img {
     width: 166px; }
   .star span {
@@ -288,7 +288,7 @@ main {
     font-family: var(--texto-epilogue);
     font-weight: 900;
     font-size: 96.2571px;
-    color: var(--color-shadow); }
+    color: var(--color-oscuro); }
   .home1 h2 {
     font-family: var(--texto-epilogue);
     font-size: 96px;
