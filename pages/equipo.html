@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../img/favicon-1.png" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -11,7 +12,14 @@
     />
     <title>NERD - Equipo</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
     <header>
       <nav class="change2">
         <div class="item1">
@@ -26,9 +34,9 @@
         </div>
         <div class="btn-nav">
           <ul>
-            <li><a href="#" class="contacto">CONTÁCTANOS</a></li>
-            <li><a href="#servicios" class="serviciosmenu2">SERVICIOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
+            <li class="contacto">CONTÁCTANOS</li>
+            <li class="serviciosmenu2">SERVICIOS</li>
+            <li><a href="equipo.html">NOSOTROS</a></li>
           </ul>
         </div>
         <div class="logo">
@@ -40,14 +48,24 @@
           /></a>
         </div>
       </nav>
+      <div class="navigation">
+        <div class="container navbut">
+          <img src="../img/video-studio-azul.png" class="primary" alt="" />
+          <img src="../img/video-studio.png" class="secundary" alt="" />
+          <span class="serviciosmenu">
+            <img src="../img/menu.svg" alt="" /><img
+              src="../img/menu-amarillo.svg"
+              alt=""
+          /></span>
+        </div>
+      </div>
     </header>
     <section class="servicespage">
       <div class="container">
         <div class="content">
           <div class="top">
-            <a href="#home" class="closee">
-              <img src="../img/equis.svg" alt="close" />
-            </a>
+            <img src="../img/video-studio.png" alt="" />
+            <img src="../img/equis.svg" alt="close" class="closee" />
           </div>
           <div class="services">
             <p>
@@ -55,6 +73,9 @@
               escribe un email a video@nerd.pe
             </p>
             <ul>
+              <li class="cerrar nosotros">
+                <a href="equipo.html"><span>NOSOTROS</span></a>
+              </li>
               <li class="cerrar">
                 <a href="videos-corporativos.html"
                   ><span>VIDEOS </span><span>CORPORATIVOS</span></a
@@ -75,8 +96,30 @@
                   ><span>CAMPAÑAS </span><span>DIGITALES</span></a
                 >
               </li>
+              <li class="cerrar contacto"><span>CONTÁCTANOS</span></li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div class="slider-contacto">
+        <div class="owl-carousel owl-theme contacto-carousel">
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="parrafoSeccion">
+        <div class="container">
+          <p>☎ +51 942 464 074 - video@nerd.pe</p>
         </div>
       </div>
     </section>
@@ -85,9 +128,7 @@
         <div class="content">
           <div class="top">
             <img class="video-studio-n" src="../img/video-studio.png" alt="" />
-            <a href="#home" class="close-contacto">
-              <img src="../img/equis.svg" alt="" />
-            </a>
+            <img src="../img/equis.svg" alt="close" class="close-contacto" />
           </div>
           <div class="contenido">
             <h3>CONTÁCTANOS</h3>
@@ -98,8 +139,8 @@
                 id="fs-frm"
                 name="complaint-form"
                 accept-charset="utf-8"
-                action="../thanks.html"
-                method=""
+                action="../php/thanks.php"
+                method="post"
               >
                 <input
                   type="text"
@@ -144,42 +185,61 @@
           </div>
         </div>
       </div>
+      <div class="parrafoSeccion">
+        <div class="container">
+          <p>☎ +51 942 464 074 - video@nerd.pe</p>
+        </div>
+      </div>
     </section>
-    <div class="star">
+    <!-- <div class="star">
       <img class="starblue" src="../img/star.svg" alt="" />
       <span>Scroll</span>
-    </div>
+    </div> -->
     <main
+      data-barba="container"
+      data-barba-namepsac="team"
       data-0="transform:translateX(0%);"
-      data-4000="transform:translateX(-94.8%);"
+      data-4000="transform:translateX(-100%);"
     >
       <section class="team-1">
-        <div class="content">
-          <h1>EQUIPO</h1>
-          <h2>CREATIVO</h2>
-          <p>
-            Le damos vida a grandes ideas a traves del video, la fotografía y el
-            diseño. Tenemos la dosis de creatividad y estrategia que nuestrs
-            clientes necesitan para alcanzar sus objetivos. Le damos vida a
-            grandes ideas a traves del video, la fotografía y el diseño. Tenemos
-            la dosis de creatividad y estrategia que nuestrs clientes necesitan
-            para alcanzar sus objetivos.
-          </p>
-          <div class="button-home contacto">
-            <div class="owl-carousel owl-theme btn-info">
-              <div class="item box">
-                <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS</p>
-              </div>
-              <div class="item box">
-                <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS</p>
+        <div class="container">
+          <div class="content">
+            <h1>EQUIPO</h1>
+            <h2>CREATIVO</h2>
+            <p>
+              Le damos vida a grandes ideas a traves del video, la fotografía y
+              el diseño. Tenemos la dosis de creatividad y estrategia que
+              nuestrs clientes necesitan para alcanzar sus objetivos. Le damos
+              vida a grandes ideas a traves del video, la fotografía y el
+              diseño. Tenemos la dosis de creatividad y estrategia que nuestrs
+              clientes necesitan para alcanzar sus objetivos.
+            </p>
+            <div class="btn-hover">
+              <div class="btn-hover-atras"></div>
+              <div class="button-home contacto">
+                <div class="owl-carousel owl-theme btn-info">
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="star2">
+          <img class="starblue" src="../img/star.svg" alt="" />
+          <img class="starblue" src="../img/star-negra.svg" alt="" />
+          <span>Scroll</span>
+        </div>
       </section>
       <section class="team-2">
-        <div class="content">
-          <img src="../img/figura-n.png" alt="img-team" />
+        <div class="container">
+          <div class="content">
+            <img src="../img/figura-n.png" alt="img-team" />
+          </div>
         </div>
       </section>
       <section class="team-3">
@@ -210,15 +270,17 @@
           </a>
         </div>
         <div class="footer">
-          <div class="info">
-            <p>☎ +51 942 464 074 - video@nerd.pe</p>
-          </div>
-          <div class="redes">
-            <a href="#">VIMEO</a>
-            <a href="#">YOUTUBE</a>
-          </div>
-          <div class="credito">
-            <p>© NERD Video Studio</p>
+          <div class="container content-footer">
+            <div class="info">
+              <p>☎ +51 942 464 074 - video@nerd.pe</p>
+            </div>
+            <div class="redes">
+              <a href="#">VIMEO</a>
+              <a href="#">YOUTUBE</a>
+            </div>
+            <div class="credito">
+              <p>© NERD Video Studio</p>
+            </div>
           </div>
         </div>
       </section>
@@ -233,6 +295,7 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>

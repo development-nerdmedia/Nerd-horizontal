@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../img/favicon-1.png" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -26,8 +27,8 @@
         </div>
         <div class="btn-nav">
           <ul>
-            <li><a href="#contacto" class="contacto">CONTÁCTANOS</a></li>
-            <li><a href="#servicios" class="serviciosmenu2">SERVICIOS</a></li>
+            <li class="contacto">CONTÁCTANOS</li>
+            <li class="serviciosmenu2">SERVICIOS</li>
             <li><a href="equipo.html">NOSOTROS</a></li>
           </ul>
         </div>
@@ -39,14 +40,23 @@
           /></a>
         </div>
       </nav>
+      <div class="navigation yellow">
+        <div class="container navbut">
+          <img src="../img/video-studio-azul.png" class="secundary" alt="" />
+          <img src="../img/video-studio.png" class="primary" alt="" />
+          <span class="serviciosmenu">
+            <img src="../img/menu-amarillo.svg" alt="" />
+            <img src="../img/menu.svg" alt=""
+          /></span>
+        </div>
+      </div>
     </header>
     <section class="servicespage">
       <div class="container">
         <div class="content">
           <div class="top">
-            <a href="#home" class="closee">
-              <img src="../img/equis.svg" alt="close" />
-            </a>
+            <img src="../img/video-studio.png" alt="" />
+            <img src="../img/equis.svg" alt="close" class="closee" />
           </div>
           <div class="services">
             <p>
@@ -54,6 +64,9 @@
               escribe un email a video@nerd.pe
             </p>
             <ul>
+              <li class="cerrar nosotros">
+                <a href="equipo.html"><span>NOSOTROS</span></a>
+              </li>
               <li class="cerrar">
                 <a href="videos-corporativos.html"
                   ><span>VIDEOS </span><span>CORPORATIVOS</span></a
@@ -74,8 +87,31 @@
                   ><span>CAMPAÑAS </span><span>DIGITALES</span></a
                 >
               </li>
+              <li class="cerrar contacto"><span>CONTÁCTANOS</span></li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div class="slider-contacto">
+        <div class="owl-carousel owl-theme contacto-carousel">
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="parrafoSeccion">
+        <div class="container">
+          <p>☎ +51 942 464 074 - video@nerd.pe</p>
         </div>
       </div>
     </section>
@@ -84,9 +120,7 @@
         <div class="content">
           <div class="top">
             <img class="video-studio-n" src="../img/video-studio.png" alt="" />
-            <a href="#home" class="close-contacto">
-              <img src="../img/equis.svg" alt="" />
-            </a>
+            <img src="../img/equis.svg" alt="close" class="close-contacto" />
           </div>
           <div class="contenido">
             <h3>CONTÁCTANOS</h3>
@@ -97,8 +131,8 @@
                 id="fs-frm"
                 name="complaint-form"
                 accept-charset="utf-8"
-                action="../thanks.html"
-                method=""
+                action="../php/thanks.php"
+                method="post"
               >
                 <input
                   type="text"
@@ -143,110 +177,140 @@
           </div>
         </div>
       </div>
+      <div class="parrafoSeccion">
+        <div class="container">
+          <p>☎ +51 942 464 074 - video@nerd.pe</p>
+        </div>
+      </div>
     </section>
-    <div class="star starInterna">
+    <!-- <div class="star starInterna">
       <img class="starblue" src="../img/star.svg" alt="" />
       <span>Scroll</span>
-    </div>
+    </div> -->
     <main
       data-0="transform:translateX(0%);"
       data-4000="transform:translateX(-100%);"
     >
-      <section class="interna-services-1">
-        <div class="content">
-          <img src="../img/videos-corporativos-sinsombra.png" alt="" />
-        </div>
-      </section>
-      <section class="interna-services-2">
-        <div class="content">
+      <section class="title-tablet">
+        <div class="container">
           <h1>VIDEOS</h1>
           <h2>CORPORATIVOS</h2>
-          <p>
-            Sabemos lo especial que es este día y sabemos la planificación y el
-            esfuerzo necesarios para llegar hasta aquí. Así que mientras vives
-            en la magia de la celebración, estamos aquí para registrarla
-          </p>
-          <!-- <button>NECESITO UN VIDEO 🎬 - NECESITO FO</button> -->
-          <div class="button-home contacto">
-            <div class="owl-carousel owl-theme btn-info">
-              <div class="item box">
-                <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS</p>
-              </div>
-              <div class="item box">
-                <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS</p>
+        </div>
+      </section>
+      <section class="interna-services-1">
+        <div class="container containerinterna">
+          <div class="content">
+            <!-- <img src="../img/videos-corporativos-sinsombra.png" alt="" /> -->
+            <video src="../img/muestravideo.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+      </section>
+      <section class="interna-services-2 order">
+        <div class="container containerinterna">
+          <div class="content">
+            <h1>VIDEOS</h1>
+            <h2>CORPORATIVOS</h2>
+            <p>
+              Sabemos lo especial que es este día y sabemos la planificación y
+              el esfuerzo necesarios para llegar hasta aquí. Así que mientras
+              vives en la magia de la celebración, estamos aquí para registrarla
+            </p>
+            <!-- <button>NECESITO UN VIDEO 🎬 - NECESITO FO</button> -->
+            <div class="btn-hover">
+              <div class="btn-hover-atras"></div>
+              <div class="button-home contacto">
+                <div class="owl-carousel owl-theme btn-info">
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="star starInterna">
+            <img class="starblue" src="../img/star.svg" alt="" />
+            <img class="starblue" src="../img/star-negra.svg" alt="" />
+            <span>Scroll</span>
           </div>
         </div>
       </section>
       <section class="interna-services-3">
-        <div class="content">
-          <ul>
-            <li>INSTITUCIONALES</li>
-            <li>INDUCTIVOS</li>
-            <li>COMUNICACIÓN INTERNA</li>
-            <li>TESTIMONIALES</li>
-            <li>CAPACITACIONES</li>
-            <li>ENTREVISTAS</li>
-            <li>VIDEOS MOTIVACIONALES</li>
-            <li>EXPLICATIVOS</li>
-          </ul>
+        <div class="container containerinterna">
+          <div class="content">
+            <ul>
+              <li class="contacto">INSTITUCIONALES</li>
+              <li class="contacto">INDUCTIVOS</li>
+              <li class="contacto">COMUNICACIÓN INTERNA</li>
+              <li class="contacto">TESTIMONIALES</li>
+              <li class="contacto">CAPACITACIONES</li>
+              <li class="contacto">ENTREVISTAS</li>
+              <li class="contacto">VIDEOS MOTIVACIONALES</li>
+              <li class="contacto">EXPLICATIVOS</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="interna-services-4">
-        <div class="content">
-          <div class="formulario">
-            <h3>EMPECEMOS UN</h3>
-            <h4>PROYECTO</h4>
-            <p>
-              Completa el formulario y nos contactaremos en breve para saber más
-              acerca de la idea que quieres poner en marcha.
-            </p>
-            <div class="form">
-              <form
-                class="formulario containerform"
-                id="fs-frm"
-                name="complaint-form"
-                accept-charset="utf-8"
-                action="php/thanks.php"
-                method="post"
-              >
-                <input
-                  type="text"
-                  name="name"
-                  id="full-name"
-                  placeholder="Nombre y Apellido "
-                  required=""
-                />
-                <input
-                  type="number"
-                  name="telephone"
-                  id="full-name"
-                  placeholder="Teléfono (te contactaremos por Whatsapp)"
-                  required=""
-                />
-                <textarea
-                  rows="6"
-                  name="message"
-                  id="complaint"
-                  placeholder="Cuentanos sobre tu proyecto"
-                  required=""
-                ></textarea>
-                <input class="btn button" type="submit" value="Enviar" />
-              </form>
+        <div class="container containerinterna">
+          <div class="content">
+            <div class="formulario">
+              <h3>EMPECEMOS UN</h3>
+              <h4>PROYECTO</h4>
+              <p>
+                Completa el formulario y nos contactaremos en breve para saber
+                más acerca de la idea que quieres poner en marcha.
+              </p>
+              <div class="form">
+                <form
+                  class="formulario containerform"
+                  id="fs-frm"
+                  name="complaint-form"
+                  accept-charset="utf-8"
+                  action="../php/thanks.php"
+                  method="post"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    id="full-name"
+                    placeholder="Nombre y Apellido "
+                    required=""
+                  />
+                  <input
+                    type="number"
+                    name="telephone"
+                    id="full-name"
+                    placeholder="Teléfono (te contactaremos por Whatsapp)"
+                    required=""
+                  />
+                  <textarea
+                    rows="6"
+                    name="message"
+                    id="complaint"
+                    placeholder="Cuentanos sobre tu proyecto"
+                    required=""
+                  ></textarea>
+                  <input class="btn button" type="submit" value="Enviar" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
         <div class="footer">
-          <div class="info">
-            <p>☎ +51 942 464 074 - video@nerd.pe</p>
-          </div>
-          <div class="redes">
-            <a href="#">VIMEO</a>
-            <a href="#">YOUTUBE</a>
-          </div>
-          <div class="credito">
-            <p>© NERD Video Studio</p>
+          <div class="container content-footer">
+            <div class="info">
+              <p>☎ +51 942 464 074 - video@nerd.pe</p>
+            </div>
+            <div class="redes">
+              <a href="#">VIMEO</a>
+              <a href="#">YOUTUBE</a>
+            </div>
+            <div class="credito">
+              <p>© NERD Video Studio</p>
+            </div>
           </div>
         </div>
       </section>

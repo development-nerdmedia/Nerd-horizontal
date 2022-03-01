@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon-1.png">
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -12,7 +13,14 @@
     />
     <title>NERD VIDEO STUDIO</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
     <header>
       <nav>
         <div class="item1">
@@ -27,7 +35,6 @@
         </div>
         <div class="btn-nav">
           <ul>
-            <!-- <li><a href="#contacto" class="contacto">CONTÁCTANOS</a></li> -->
             <li class="contacto">CONTÁCTANOS</li>
             <li class="serviciosmenu">SERVICIOS</li>
             <li><a href="pages/equipo.html">NOSOTROS</a></li>
@@ -43,9 +50,10 @@
       </nav>
       <div class="navigation">
         <div class="container navbut">          
-        <img src="img/video-studio-azul.png" alt="">
-        <a href="#">
-          <img src="img/menu.svg" alt=""></a>
+        <img src="img/video-studio-azul.png" class="primary" alt="">
+        <img src="img/video-studio.png" class="secundary" alt="">
+        <span class="serviciosmenu">
+          <img src="img/menu.svg" alt=""><img src="img/menu-amarillo.svg" alt=""></span>
         </div>
       </div>
     </header>
@@ -53,6 +61,7 @@
       <div class="container">
         <div class="content">
           <div class="top">
+            <img src="img/video-studio.png" alt="">
               <img src="img/equis.svg" alt="close" class="close"/>
           </div>
           <div class="services">
@@ -61,6 +70,11 @@
               escribe un email a video@nerd.pe
             </p>
             <ul>
+              <li class="cerrar nosotros">
+                <a href="pages/equipo.html"
+                  ><span>NOSOTROS</span></a
+                >
+              </li>
               <li class="cerrar">
                 <a href="pages/videos-corporativos.html"
                   ><span>VIDEOS </span><span>CORPORATIVOS</span></a
@@ -81,8 +95,31 @@
                   ><span>CAMPAÑAS </span><span>DIGITALES</span></a
                 >
               </li>
+              <li class="cerrar contacto"><span>CONTÁCTANOS</span>
+              </li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div class="slider-contacto">
+        <div class="owl-carousel owl-theme contacto-carousel">
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+          <div class="item box">
+            <p>
+              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
+              escribe un email a video@nerd.pe
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="parrafoSeccion">
+        <div class="container">          
+        <p>☎  +51 942 464 074  -  video@nerd.pe </p>
         </div>
       </div>
     </section>
@@ -102,7 +139,7 @@
                 id="fs-frm"
                 name="complaint-form"
                 accept-charset="utf-8"
-                action="thanks.html"
+                action="php/thanks.php"
                 method="post"
               >
                 <input
@@ -148,12 +185,17 @@
           </div>
         </div>
       </div>
+      <div class="parrafoSeccion">
+        <div class="container">          
+        <p>☎  +51 942 464 074  -  video@nerd.pe </p>
+        </div>
+      </div>
     </section>
-    <div class="star">
+    <!-- <div class="star">
       <img class="starblue" src="img/star.svg" alt="">
       <span>Scroll</span>
-    </div>
-    <main
+    </div> -->
+    <main data-barba="container" data-barba-namepsac="home"
       data-0="transform:translateX(0%);"
       data-4000="transform:translateX(-200%);"      
     >
@@ -169,74 +211,108 @@
               diseño. Tenemos la dosis de creatividad y estrategia que nuestrs
               clientes necesitan para alcanzar sus objetivos.
             </p>
-            <div class="button-home contacto">
-              <div class="owl-carousel owl-theme btn-info">
-                <div class="item box">
-                  <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS</p>
-                </div>
-                <div class="item box">
-                  <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS</p>
+            <div class="btn-hover">
+              <div class="btn-hover-atras"></div>
+              <div class="button-home contacto">
+                <div class="owl-carousel owl-theme btn-info">
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div>
-        </div>        
+            </div> 
+            <!-- <div class="button">
+              <div class="back"></div>
+              <div class="button-home2 contacto">
+                <div class="owl-carousel owl-theme btn-info">
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
+                  <div class="item box">
+                    <p>NECESITO UN VIDEO 🎬 - NECESITO FOTOS -</p>
+                  </div>
+                </div>
+              </div>
+            </div>            -->
+          </div>
+        </div>     
+        <div class="star2">
+          <img class="starblue" src="img/star.svg" alt="">
+          <img class="starblue" src="img/star-negra.svg" alt="">
+          <span>Scroll</span>
+        </div>   
       </section>
       <section class="home2">
-        <div class="content">
-          <h2>VIDEOS</h2>
-          <h3>CORPORATIVOS</h3>
-          <a href="./pages/videos-corporativos.html">
-            <!-- <img
-              class="videos-corporativos"
-              src="img/videos-corporativos-sinsombra.png"
-              alt="videos-corporativos"
-          /> -->
-          <video src="img/muestravideo.mp4" autoplay muted loop></video>
-        </a>
+        <div class="containerVideo container">
+          <div class="content">
+            <h2>VIDEOS</h2>
+            <h3>CORPORATIVOS</h3>
+            <a href="./pages/videos-corporativos.html">
+              <!-- <img
+                class="videos-corporativos"
+                src="img/videos-corporativos-sinsombra.png"
+                alt="videos-corporativos"
+            /> -->
+            <video src="img/muestravideo.mp4" autoplay muted loop></video>
+          </a>
+          </div>
         </div>
+        
       </section>
       <section class="home3">
-        <div class="content">
-          <h2>REGISTRO</h2>
-          <h3>AUDIOVISUAL</h3>
-          <a href="./pages/registro-audiovisual.html">
-            <!-- <img
-              class="videos-corporativos"
-              src="img/registro-audiovisual.png"
-              alt="videos-corporativos"
-          /> -->
-          <video src="img/muestravideo.mp4" autoplay muted loop></video></a>
+        <div class="container containerVideo">
+          <div class="content">
+            <h2>REGISTRO</h2>
+            <h3>AUDIOVISUAL</h3>
+            <a href="./pages/registro-audiovisual.html">
+              <!-- <img
+                class="videos-corporativos"
+                src="img/registro-audiovisual.png"
+                alt="videos-corporativos"
+            /> -->
+            <video src="img/muestravideo.mp4" autoplay muted loop></video></a>
+          </div>
         </div>
+        
       </section>
       <section class="home4">
-        <div class="content">
-          <h2>ANIMACIÓN</h2>
-          <h3>2D/3D</h3>
-          <a href="./pages/animacion-2D-3D.html">
-            <!-- <img
-              class="videos-corporativos"
-              src="img/animacion-2d3d.png"
-              alt="videos-corporativos"
-          /> -->
-          <video src="img/muestravideo.mp4" autoplay muted loop></video></a>
+        <div class="container containerVideo">
+          <div class="content">
+            <h2>ANIMACIÓN</h2>
+            <h3>2D/3D</h3>
+            <a href="./pages/animacion-2D-3D.html">
+              <!-- <img
+                class="videos-corporativos"
+                src="img/animacion-2d3d.png"
+                alt="videos-corporativos"
+            /> -->
+            <video src="img/muestravideo.mp4" autoplay muted loop></video></a>
+          </div>
         </div>
+        
       </section>
       <section class="home5">
-        <div class="content">
-          <h2>ANIMACIÓN</h2>
-          <h3>2D/3D</h3>
-          <a href="./pages/videos-promocionales.html"">
-            <!-- <img
-              class="videos-corporativos"
-              src="img/campanas-digitales.png"
-              alt="videos-corporativos"
-          /> -->
-          <video src="img/muestravideo.mp4" autoplay muted loop></video></a>
-        </div>
+        <div class="container containerVideo">
+          <div class="content">
+            <h2>VIDEOS
+            </h2>
+            <h3>PROMOCIONALES</h3>
+            <a href="./pages/videos-promocionales.html"">
+              <!-- <img
+                class="videos-corporativos"
+                src="img/campanas-digitales.png"
+                alt="videos-corporativos"
+            /> -->
+            <video src="img/muestravideo.mp4" autoplay muted loop></video></a>
+          </div>
+        </div>        
       </section>
       <section class="home6">
-        <div class="content">
+        <div class="container">
+          <div class="content">
           <div class="formulario">
             <h3>EMPECEMOS UN</h3>
             <h4>PROYECTO</h4>
@@ -250,8 +326,8 @@
                 id="fs-frm"
                 name="complaint-form"
                 accept-charset="utf-8"
-                action="thanks.html"
-                method=""
+                action="php/thanks.php"
+                method="post"
               >
                 <input
                   type="text"
@@ -279,17 +355,22 @@
             </div>
           </div>
         </div>
+        </div>
+        
         <div class="footer">
-          <div class="info">
-            <p>☎ +51 942 464 074 - video@nerd.pe</p>
+          <div class="container content-footer">
+            <div class="info">
+              <p>☎ +51 942 464 074 - video@nerd.pe</p>
+            </div>
+            <div class="redes">
+              <a href="#">VIMEO</a>
+              <a href="#">YOUTUBE</a>
+            </div>
+            <div class="credito">
+              <p>© NERD Video Studio</p>
+            </div>
           </div>
-          <div class="redes">
-            <a href="#">VIMEO</a>
-            <a href="#">YOUTUBE</a>
-          </div>
-          <div class="credito">
-            <p>© NERD Video Studio</p>
-          </div>
+          
         </div>
       </section>
     </main>
@@ -302,6 +383,7 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
