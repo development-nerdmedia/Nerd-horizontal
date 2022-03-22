@@ -4,6 +4,7 @@ window.addEventListener("load", () => {
         document.querySelector(".page-loader").style.display = "none";
     }, 600);
 });
+
 $('.btn-info').owlCarousel({
     autoplay: true,
     margin: 5,
@@ -99,3 +100,15 @@ $('.thanks-carousel2').owlCarousel({
 })
 
 
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+// const marqueeContent2 = document.querySelector("ul.marquee-content2");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+// root.style.setProperty("--marquee-elements", marqueeContent2.children.length);
+
+for (let i = 0; i < marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    // marqueeContent2.appendChild(marqueeContent2.children[i].cloneNode(true));
+}

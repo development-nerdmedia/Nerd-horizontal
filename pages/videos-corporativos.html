@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MFZL7NN");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,8 +28,26 @@
     <title>NERD - Videos Corporativos</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MFZL7NN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="page-loader">
-      <div><img src="../img/gif_loadingv2.gif" alt="" /></div>
+      <div>
+        <lottie-player
+          src="../img/gif-nerd-sin-fondo.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
     </div>
     <header>
       <nav class="change1">
@@ -61,7 +93,13 @@
     </header>
     <section class="pageresize">
       <div>
-        <img src="../img/icon-resize.png" alt="icon" />
+        <lottie-player
+          src="../img/gif-nerd-sin-fondo.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </section>
     <section class="servicespage">
@@ -72,13 +110,6 @@
             <img src="../img/equis.svg" alt="close" class="closee" />
           </div>
           <div class="services">
-            <p>
-              Te ayudamos con tu proyecto. Llámanos al
-              <img src="../img/telephone.png" alt="icon-telephone" /> +51 942
-              464 074 o escribe un email a
-              <img src="../img/carta1.png" alt="icon-mail" />
-              hola<!-- >@. -->@nerdsvideo<!-- >@. -->.com
-            </p>
             <ul>
               <li class="cerrar nosotros">
                 <a href="equipo.html"><span>NOSOTROS</span></a>
@@ -109,19 +140,37 @@
         </div>
       </div>
       <div class="slider-contacto">
-        <div class="owl-carousel owl-theme contacto-carousel">
-          <div class="item box">
-            <p>
-              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
-              escribe un email a hola<!-- >@. -->@nerdsvideo<!-- >@. -->.com
-            </p>
-          </div>
-          <div class="item box">
-            <p>
-              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
-              escribe un email a hola<!-- >@. -->@nerdsvideo<!-- >@. -->.com
-            </p>
-          </div>
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -135,19 +184,28 @@
       <div class="container">
         <div class="content">
           <div class="top">
-            <img class="video-studio-n" src="../img/video-studio.png" alt="" />
-            <img src="../img/equis.svg" alt="close" class="close-contacto" />
+            <lottie-player
+              src="../img/gif-nerd-sin-fondo.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></lottie-player
+            ><img src="../img/equis.svg" alt="close" class="close-contacto" />
           </div>
           <div class="contenido">
             <h3>CONTÁCTANOS</h3>
             <p>
               Completa el formulario y nos contactaremos en breve. Te ayudamos
-              con tu proyecto. Llámanos al +51 942 464 074 o escribe un email a
-              hola@nerdsvideo.com
+              con tu proyecto. Llámanos al
+              <a href="tel:+51 942 464 074">+51 942 464 074</a> o escribe un
+              email a
+              <a href="mailto:hola@nerdsvideo.com">hola@nerdsvideo.com</a>
             </p>
             <p class="p-movil">
-              Llámanos al +51 942 464 074 o escribe un email a
-              hola@nerdsvideo.com
+              Llámanos al <a href="tel:+51 942 464 074">+51 942 464 074</a> o
+              escribe un email a
+              <a href="mailto:hola@nerdsvideo.com">hola@nerdsvideo.com</a>
             </p>
             <div class="form">
               <form
@@ -211,11 +269,10 @@
                   >
                 </div>
                 <input
-                  class="g-recaptcha btnEnviar btn button"
+                  class="g-recaptcha btnEnviar btn button btnform1"
                   type="submit"
                   value="Enviar"
                   data-sitekey="6LdHEbUeAAAAAD4kyQWaBjfoKtmeTOQPaKDHRGWw"
-                  data-callback="onSubmit"
                   data-action="submit"
                 />
               </form>
@@ -224,19 +281,37 @@
         </div>
       </div>
       <div class="slider-contacto">
-        <div class="owl-carousel owl-theme contacto-carousel">
-          <div class="item box">
-            <p>
-              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
-              escribe un email a hola<!-- >@. -->@nerdsvideo<!-- >@. -->.com
-            </p>
-          </div>
-          <div class="item box">
-            <p>
-              Te ayudamos con tu proyecto. Llámanos al ☎ +51 942 464 074 o
-              escribe un email a hola<!-- >@. -->@nerdsvideo<!-- >@. -->.com
-            </p>
-          </div>
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+            <li>
+              Te ayudamos con tu proyecto. Llámanos al
+              <img src="../img/telephone.png" alt="" />
+              <span>+51 942 464 074</span> o escribe un email a
+              <img src="../img/carta.png" alt="" />
+              <span> hola@nerdsvideo.com</span> |
+            </li>
+          </ul>
         </div>
       </div>
       <div class="parrafoSeccion">
@@ -245,6 +320,15 @@
         </div>
       </div>
     </section>
+    <div class="btn-whatsapp">
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=51942464074&text=¡Hola!%20Estoy%20en%20búsqueda%20de%20un%20proveedor%20para%20realizar%20un%20video"
+      >
+        <img src="../img/btnwhatsapp-morado.png" alt="whatsapp" />
+        <img src="../img/btnwhatsapp-amarillo.png" alt="whatsapp" />
+      </a>
+    </div>
     <main
       data-0="transform:translateX(0%);"
       data-4000="transform:translateX(-100%);"
@@ -260,7 +344,7 @@
           <div class="content">
             <!-- <img src="../img/videos-corporativos-sinsombra.png" alt="" /> -->
             <video
-              src="../img/muestravideo.mp4"
+              src="../img/videoscorporativos.mp4"
               playsinline
               autoplay
               loop
@@ -280,19 +364,21 @@
               audiencia. Transmitimos los valores de tu marca de una forma más
               efectiva, visual y fácil de consumir.
             </p>
-            <!-- <button>NECESITO UN VIDEO 🎬 - NECESITO FO</button> -->
-            <div class="btn-hover">
-              <div class="btn-hover-atras"></div>
-              <div class="button-home contacto">
-                <div class="owl-carousel owl-theme btn-info">
-                  <div class="item box">
-                    <p>EMPEZAR UN PROYECTO 🎬 -</p>
-                  </div>
-                  <div class="item box">
-                    <p>EMPEZAR UN PROYECTO 🎬 -</p>
-                  </div>
-                </div>
-              </div>
+            <div class="marquee2 contacto">
+              <ul class="marquee-content2">
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+              </ul>
+            </div>
+            <div class="marquee3 contacto">
+              <ul class="marquee-content3">
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+                <li>EMPEZAR UN PROYECTO 🎬 -</li>
+              </ul>
             </div>
           </div>
           <div class="star starInterna">
@@ -328,7 +414,7 @@
                 como le sea posible. También puedes contactarnos por
                 <a href="mailto:hola@nerdsvideo.com">correo</a> y
                 <a
-                  href="https://api.whatsapp.com/send?phone=51942464074&text=Hola%20Nerd%20Video.!"
+                  href="https://api.whatsapp.com/send?phone=51942464074&text=¡Hola!%20Estoy%20en%20búsqueda%20de%20un%20proveedor%20para%20realizar%20un%20video"
                   target="_blank"
                   >Whatsapp</a
                 >.
@@ -397,11 +483,10 @@
                     >
                   </div>
                   <input
-                    class="g-recaptcha btnEnviar btn button"
+                    class="g-recaptcha btnEnviar btn button btnform2"
                     type="submit"
                     value="Enviar"
                     data-sitekey="6LdHEbUeAAAAAD4kyQWaBjfoKtmeTOQPaKDHRGWw"
-                    data-callback="onSubmit"
                     data-action="submit"
                   />
                 </form>
@@ -416,7 +501,7 @@
                 <img src="../img/telephone.png" alt="icon-telephone" />
                 <a
                   target="_blank"
-                  href="https://api.whatsapp.com/send?phone=51942464074&text=Hola%20Nerd%20Video.!"
+                  href="https://api.whatsapp.com/send?phone=51942464074&text=¡Hola!%20Estoy%20en%20búsqueda%20de%20un%20proveedor%20para%20realizar%20un%20video"
                   >+51 942 464 074</a
                 >
                 -
@@ -427,8 +512,12 @@
               </p>
             </div>
             <div class="redes">
-              <a href="#">VIMEO</a>
-              <a href="#">YOUTUBE</a>
+              <a href="https://vimeo.com/user29548988" target="_blank">VIMEO</a>
+              <a
+                href="https://www.youtube.com/channel/UCokFnnNc_4Vzt8mUlBjjpEw"
+                target="_blank"
+                >YOUTUBE</a
+              >
             </div>
             <div class="credito">
               <p>© NERD Video Studio</p>
@@ -438,17 +527,21 @@
       </section>
     </main>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
+    <!-- <script>
       function onSubmit(token) {
         document.getElementById("fs-frm").submit();
         document.getElementById("fs-frm2").submit();
       }
-    </script>
+    </script> -->
     <script type="text/javascript" src="../js/skrollr.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>

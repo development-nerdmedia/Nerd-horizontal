@@ -14,21 +14,21 @@
   </head>
   <body>
   <?php 
-$myemails = 'development@nerdmedia.pe, alonso@nerdmedia.pe';
+$myemails = 'development@nerdmedia.pe, alonso@nerdmedia.pe, hola@nerdsvideo.com';
 $name = $_POST['name'];
 $tel = $_POST['telephone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
 $to = $myemails;
-$email_subject = "Contacto Nerd Video";
+$email_subject = "Contacto Nerd Video Studio";
 $email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n 
 Telefono: $tel \n Email: $email \n Mensaje: \n $message";
 $headers = "From: $email";
 
 mail($to, $email_subject, $email_body, $headers);
 ?>
-<div class="page-loader">
+    <div class="page-loader">
       <div><img src="../img/gif_loading.gif" alt="" /></div>
     </div>
     <main>
@@ -44,24 +44,37 @@ mail($to, $email_subject, $email_body, $headers);
 
         <div class="contenido-thanks">
           <div class="slider-thanks">
-            <div class="owl-carousel owl-theme thanks-carousel">
-            <div class="item box">
-                <!-- <p>¡GRACIAS! EN BREVE TE ESCRIBÍMOS&nbsp;</p> -->
+            <!-- <div class="owl-carousel owl-theme thanks-carousel">
+              <div class="item box">
                 <p>TE ESCRIBÍMOS ¡GRACIAS! EN BREVE&nbsp;</p>
               </div>
               <div class="item box">
                 <p>TE ESCRIBÍMOS ¡GRACIAS! EN BREVE&nbsp;</p>
               </div>
+            </div> -->
+            <div class="marquee">
+              <ul class="marquee-content">
+                <li>¡GRACIAS! TE ESCRIBÍMOS EN BREVE</li>
+                <li>¡GRACIAS! TE ESCRIBÍMOS EN BREVE</li>
+                <li>¡GRACIAS! TE ESCRIBÍMOS EN BREVE</li>
+              </ul>
             </div>
           </div>
           <div class="slider-thanks2">
-            <div class="owl-carousel owl-theme thanks-carousel2">
+            <!-- <div class="owl-carousel owl-theme thanks-carousel2">
               <div class="item box">
                 <p>TE ESCRIBÍMOS ¡GRACIAS! EN BREVE&nbsp;</p>
               </div>
               <div class="item box">
                 <p>TE ESCRIBÍMOS ¡GRACIAS! EN BREVE&nbsp;</p>
               </div>
+            </div> -->
+            <div class="marquee">
+              <ul class="marquee-content marquee-content2">
+                <li>TE ESCRIBÍMOS EN BREVE ¡GRACIAS!</li>
+                <li>TE ESCRIBÍMOS EN BREVE ¡GRACIAS!</li>
+                <li>TE ESCRIBÍMOS EN BREVE ¡GRACIAS!</li>
+              </ul>
             </div>
           </div>
           <div class="content-btn">
