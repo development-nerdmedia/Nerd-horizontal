@@ -20,13 +20,30 @@ $tel = $_POST['telephone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
+$cuerpo = '
+<html>  
+<body>  
+<h1>Hola Nerd Video!</h1> 
+<p>Tienes un nuevo mensaje:</p>
+<p> <b>Nombre :</b> '.$name .'</p>
+<p> <b>Teléfono :</b> '.$tel .'</p>
+<p> <b>Email :</b> '.$email .'</p>
+<p> <b>Mensaje :</b> '.$message .'</p>
+</body> 
+</html> 
+';
+//para el envío en formato HTML 
+$headers = "MIME-Version: 1.0\r\n"; 
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+
 $to = $myemails;
 $email_subject = "Contacto Nerd Video Studio";
 $email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n 
 Telefono: $tel \n Email: $email \n Mensaje: \n $message";
-$headers = "From: $email";
+$headers .= "From: $email";
 
-mail($to, $email_subject, $email_body, $headers);
+
+mail($to, $email_subject, $cuerpo, $headers);
 ?>
     <div class="page-loader">
       <div><img src="../img/gif_loading.gif" alt="" /></div>
